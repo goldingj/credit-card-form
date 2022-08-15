@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel = "stylesheet" href = "styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    </head>
+      
+    <body class = "container">
+        <div>
+            <img class = "side-img" src = "bg-main-desktop.png" alt = "">
+        </div> 
+        
+        <div class = "front-card">
+            <div class = "logo-div">
+        <img src = "file:///C:/Users/jgold/AppData/Local/Temp/Temp2_interactive-card-details-form-main.zip/interactive-card-details-form-main/images/card-logo.svg">
+                <p id = "number-card">0000 0000 0000 0000</p>
+                <span id = "name-card">Jane Appleseed</span>
+                <span id = "exp-card">00/00</span>
+            </div>
+        <img class = "front-card-img" src = "bg-card-front.png" alt = "image of front of card">
+        </div>
+
+        <div class = "back-card">
+            <div>
+                <p id = "cvc-card">000</p>
+            </div>
+        <img src = "bg-card-back.png" alt = "image of back of card">
+        </div>
+
+        <div class = "form">
+            <form name = "card-form">
+                <label for = "name" >CARDHOLDER NAME</label> <br>
+                <input type = "text" id = "name" name = "name" placeholder = "e.g. Jane Appleseed" required> <br> <br>
+                <label for = "card-number">CARD NUMBER</label><br>
+                <input type = "text" id = "card-number" name = "card-number" placeholder = "e.g. 1234 5678 9123 0000" pattern = "[0-9]{16}" required><br><br>
+                <label for = "expiration">EXP. DATE (MM/YY)</label><br>
+                <input type = "text" id = "expiration" name = "expiration-month" placeholder = "MM" pattern = "[0-12]{2}" required>
+                <input type = "text" id = "expiration" name = "expiration-year" placeholder = "YY" pattern = "[0-9]{2}" required><br><br>
+                <label for = "cvc">CVC</label> <br>
+                <input type = "text" id = "cvc" name = "cvc" placeholder = "e.g. 123" pattern = "[0-9]{3}" required><br><br>
+                <button type = "submit">Confirm</button>
+            </form>
+        </div>
+        <script src = "index.js"></script>
+    </body>
+</html>
